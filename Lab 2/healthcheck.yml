@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hw-demo-container
-          image: "us.icr.io/<namespace>/hello-world:2"
+          image: "<region>.icr.io/<namespace>/<image_name>:<version>" # edit here!
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
